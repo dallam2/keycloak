@@ -1,0 +1,1 @@
+docker run --name keycloak17 -p 8080:8080  -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=Admin@123  -v /path/to/realm/data:/opt/keycloak/data/import   quay.io/keycloak/keycloak:latest  start-dev --import-realm
